@@ -34,5 +34,41 @@
         "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
         "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
         "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua."
+    },
+    {
+        "title": "Kukis & Lumer",
+        "date": "09 Desember 2025",
+        "time": "08.00 WIB",
+        "location_name": "HKBP Resort Medan Helvetia",
+        "location_map": "Jl. Matahari Raya, Kec. Medan Helvetia, Kel. Helvetia, Sumatera Utara",
+        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.899629680734!2d98.6292259!3d3.6104357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f9df9c4c691%3A0xeecfdbb1ca7f5162!2sDistributor%20Susu%20Kambing%20Etawa%20Beringin%20Suka%20Sehat!5e0!3m2!1sid!2sid!4v1765254370589!5m2!1sid!2sid",
+        "image": "assets/image/Kukis&Basah/profile.jpeg",
+        "gallery": [
+            { 
+                "wedding" : [
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
+                ]
+            },
+            {
+                "fiance": [
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
+                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
+                ]
+            }
+        ],
+        "text_hero": "Dua hati, satu perjalanan. Bersama dalam cinta, tertawa dalam kebahagiaan, menapaki hari-hari baru sebagai satu.",
+        "text_invite": "Dengan hati yang tulus, kami mengundang Anda untuk menjadi saksi cinta kami. Datanglah dan rayakan momen kebahagiaan ini bersama kami.",
+        "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
+        "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
+        "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua."
     }
 ]

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const params = new URLSearchParams(window.location.search);
     const user = decodeURIComponent(params.get('user'));
     const users = usersData.find(u => u.title === user);
+    if(!users) showError();
     changeTitle(users);
     showAllLayout(users);
 });
@@ -247,9 +248,27 @@ function showClosing(users) {
 
 function showFooter(users) {
     const footer = document.querySelector('footer');
+    footer.classList.add('footer-container');
     const pUsers = document.createElement('p');
     pUsers.textContent = `Salam yang Indah dari kami ${users.title}`;
     const pCreator = document.createElement('p');
     pCreator.textContent = 'Made with ❤️: Jeremi. (2025)';
     footer.append(pUsers, pCreator);
+};
+
+function showError() {
+    const body = document.querySelector('body');
+    body.setAttribute('id', 'not-found');
+    const header = document.querySelector('header');
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Ups, something wrong.';
+    header.appendChild(h1);
+    const main = document.querySelector('main');
+    const p = document.createElement('p');
+    p.textContent = 'Kemungkinan user tidak ditemukan.';
+    main.appendChild(p);
+    const footer = document.querySelector('footer');
+    const pFooter = document.createElement('p');
+    pFooter.textContent = 'Made with ❤️: Jeremi. (2025)';
+    footer.appendChild(pFooter);
 }
