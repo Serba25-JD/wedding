@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&family=Forum&display=swap');
+
+:root {
+    --bg: #fef9f1;
+    --pm: #dde2e4;
+    --pm2: #f5dcd1;
+    --pm3: #b7a299;
+    --pm4: #5e4c42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+html, body {
+    background-color: var(--bg);
+    font-family: "Forum", serif;
+    color: var(--pm4);
+}
+
+/* Style */
+.floral-box {
+    margin: 20px auto;
+    max-width: 500px;
+    position: relative;
+}
+
+.floral-box::before {
+    content: "❀";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: var(--pm4);
+}
+
+.divider {
+    width: 180px;
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(to right, transparent, #c09a6b, transparent);
+    position: relative;
+}
+
+.divider::before {
+    content: "❀";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c09a6b;
+    font-size: 20px;
+}
+
+/* Header */
+.header-container .header-content-date {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--pm2);
+}
+
+.header-container .header-content-date p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header-container .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.header-container .header-content div {
+    flex: 1;
+}
+
+.header-container .header-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+}
+
+.header-container .header-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.header-container .header-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header-container .header-content img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Main */
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Dancing Script", cursive;
+}
+
+.container p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container iframe {
+    width: 50%;
+    height: 50vh;
+    margin: 2rem 0;
+}
+
+.container .hero {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.container .hero .hero-content-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .hero .hero-content-right img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.container .gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.container .gallery-container .gallery-content {
+    background: white;
+    padding: 0.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-radius: 1rem;
+    transform: rotate(-3deg);
+    transition: 0.3s;
+    flex: 1 1 20%;
+    margin: 2rem 0;
+}
+
+.container .gallery-container .gallery-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--pm3);
+}
+
+footer p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* Coloring */
+#hero {
+    background-color: var(--pm2);
+}
+
+#date {
+    background-color: var(--pm);
+}
+
+/* Responsive */
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    html, body {
+        font-size: 70%;
+    }
+    .header-container .header-content {
+        flex-direction: column;
+        gap: 3rem;
+        min-height: 0;
+    }
+    .header-container .header-content div {
+        flex: none;
+    }
+    .container .hero {
+        flex-wrap: wrap;
+    }
+    .container .hero .hero-content-right {
+        flex-direction: column;
+    }
+    .container iframe {
+        width: 100%;
+    }
+    .container .gallery-container .gallery-content {
+        flex: 1 1 40%;
+    }
+    footer p {
+        padding: 0;
+    }
+}
+
+/* Tablet (601px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    html, body {
+        font-size: 80%;
+    }
+        .header-container .header-content {
+        flex-direction: column;
+        gap: 3rem;
+        min-height: 0;
+    }
+    .header-container .header-content div {
+        flex: none;
+    }
+    .container .hero {
+        flex-wrap: wrap;
+    }
+    .container .hero .hero-content-right {
+        flex-direction: column;
+    }
+    .container iframe {
+        width: 100%;
+    }
+    .container .gallery-container .gallery-content {
+        flex: 1 1 40%;
+    }
+    footer p {
+        padding: 0;
+    }
+}
+
+/* Laptop (901px – 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    html, body {
+        font-size: 100%;
+    }
+}
+
+/* Desktop (≥ 1201px) */
+@media (min-width: 1201px) {
+    html, body {
+        font-size: 100%;
+    }
+}
