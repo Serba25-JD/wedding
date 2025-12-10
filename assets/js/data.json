@@ -1,7 +1,7 @@
 [
     {
         "title": "Kukis & Basah",
-        "date": "09 Desember 2025",
+        "date": "10 Desember 2025",
         "time": "08.00 WIB",
         "location_name": "HKBP Resort Medan Helvetia",
         "location_map": "Jl. Matahari Raya, Kec. Medan Helvetia, Kel. Helvetia, Sumatera Utara",
@@ -70,5 +70,12 @@
         "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
         "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
         "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua."
+    },
+    {
+        "song": [
+            "assets/audio/Glenn Fredly - Kisah Romantis.mp3",
+            "assets/audio/Isyana Sarasvati - Kau Adalah (feat. Rayi Putra).mp3",
+            "assets/audio/Yovie & Nuno - Janji Suci.mp3"
+        ]
     }
 ]
