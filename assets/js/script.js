@@ -420,7 +420,7 @@ function showFooter() {
     const pH2 = document.createElement('p');
     pH2.textContent = 'Buat momen spesialmu lebih berkesan dengan undangan online yang elegan, interaktif, dan mudah dibagikan.';
     const aH2 = document.createElement('a');
-    aH2.href = 'https://wa.me/628123456789';
+    aH2.href = 'https://wa.me/625156246765';
     aH2.classList.add('btn-contact');
     aH2.textContent = 'Hubungi Kami Sekarang.';
     divContent.append(h2, pH2, aH2);
