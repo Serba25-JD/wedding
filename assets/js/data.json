@@ -1,75 +1,71 @@
 [
     {
-        "title": "Kukis & Basah",
-        "date": "10 Desember 2025",
-        "time": "08.00 WIB",
-        "location_name": "HKBP Resort Medan Helvetia",
-        "location_map": "Jl. Matahari Raya, Kec. Medan Helvetia, Kel. Helvetia, Sumatera Utara",
-        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.899629680734!2d98.6292259!3d3.6104357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f9df9c4c691%3A0xeecfdbb1ca7f5162!2sDistributor%20Susu%20Kambing%20Etawa%20Beringin%20Suka%20Sehat!5e0!3m2!1sid!2sid!4v1765254370589!5m2!1sid!2sid",
-        "image": "assets/image/Kukis&Basah/profile.jpeg",
+        "title": "Rio & Lidia",
+        "date": "16 Juli 2025",
+        "time": "10.00 WIB",
+        "location_map": "Desa Tukka Ambobi-Paranginan",
+        "location_name": "Desa Tukka Ambobi, Pakkat, Humbang Hasundutan",
+        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.086034460051!2d98.454709!3d2.120552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302fb5267621f685%3A0x846ad674dcb3917!2sDesa%20Tukka%20Ambobi-Paranginan!5e0!3m2!1sid!2sid!4v1765430976572!5m2!1sid!2sid",
+        "location_coordinate": "2.121217099754979, 98.45469810792544",
+        "image_header": "assets/image/Rio&Lidia/profile.webp",
+        "image_hero": "assets/image/Rio&Lidia/profile_2.webp",
+        "background_image": "../image/Rio&Lidia/profile_5.webp",
+        "biography": [
+            {
+                "boy": [
+                    {
+                        "title": "Riolinto Marpaung, SP",
+                        "image": "assets/image/Rio&Lidia/profile_pria.webp",
+                        "text": "Anak Kelima dari Bapak Opung Irfan Marpaung (+) dan Ibu br. Sinaga."
+                    }
+                ],
+                "women": [
+                    {
+                        "title": "Lidia br. Sihotang",
+                        "image": "assets/image/Rio&Lidia/profile_wanita.webp",
+                        "text": "Anak Keempat dari Bapak J. Sihotang dan Ibu A. br. Nainggolan."
+                    }
+                ]
+            }
+        ],
         "gallery": [
             { 
                 "wedding" : [
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
+                    { "src": "assets/image/Rio&Lidia/profile_2.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_3.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_4.webp"}
                 ]
             },
             {
                 "fiance": [
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
+                    { "src": "assets/image/Rio&Lidia/profile_5.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_6.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_7.webp"}
                 ]
             }
         ],
         "text_hero": "Dua hati, satu perjalanan. Bersama dalam cinta, tertawa dalam kebahagiaan, menapaki hari-hari baru sebagai satu.",
-        "text_invite": "Dengan hati yang tulus, kami mengundang Anda untuk menjadi saksi cinta kami. Datanglah dan rayakan momen kebahagiaan ini bersama kami.",
-        "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
-        "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
-        "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua."
-    },
-    {
-        "title": "Kukis & Lumer",
-        "date": "09 Desember 2025",
-        "time": "08.00 WIB",
-        "location_name": "HKBP Resort Medan Helvetia",
-        "location_map": "Jl. Matahari Raya, Kec. Medan Helvetia, Kel. Helvetia, Sumatera Utara",
-        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.899629680734!2d98.6292259!3d3.6104357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f9df9c4c691%3A0xeecfdbb1ca7f5162!2sDistributor%20Susu%20Kambing%20Etawa%20Beringin%20Suka%20Sehat!5e0!3m2!1sid!2sid!4v1765254370589!5m2!1sid!2sid",
-        "image": "assets/image/Kukis&Basah/profile.jpeg",
-        "gallery": [
-            { 
-                "wedding" : [
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
-                ]
+        "text_message": [ 
+            {
+                "title": "Shalom"
             },
             {
-                "fiance": [
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"},
-                    { "src": "assets/image/Kukis&Basah/profile.jpeg"}
-                ]
+                "text": [ "Tuhan membuat segala sesuatu indah pada waktunya. Indah saat Dia mempertemukan, indah saat Dia menumbuhkan kasih, dan indah saat Dia mempersatukan putra-putri kami dalam suatu ikatan pernikahan Kudus.", "Dengan segala kerendahan hati dan dengan ungkapan syukur atas karunia Tuhan, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Resepsi Pernikahaan kami." ]
             }
         ],
-        "text_hero": "Dua hati, satu perjalanan. Bersama dalam cinta, tertawa dalam kebahagiaan, menapaki hari-hari baru sebagai satu.",
-        "text_invite": "Dengan hati yang tulus, kami mengundang Anda untuk menjadi saksi cinta kami. Datanglah dan rayakan momen kebahagiaan ini bersama kami.",
         "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
         "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
-        "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua."
+        "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua.",
+        "bank": [
+            {
+                "BCA": [
+                    { 
+                        "number": "8430559681",
+                        "name": "Riolinto Marpaung"
+                    }
+                ]
+            }
+        ]
     },
     {
         "song": [
