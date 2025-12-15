@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --ivory: #F7F4EF;
+    --warm-grey: #C9C9C9;
+    --charcoal: #2E2E2E;
+    --gold-accent: #2E2E2E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--gold-accent);
+}
+
+/* Open Wedding */
+#open-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 3rem;
+}
+
+#open-container::after {
+    content: '';
+    position: fixed;
+    background-image: url('../../assets/image/main/ball-room-768x512.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+#open-container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#open-container h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+}
+
+#open-container p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#open-container .bride-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#open-container .bride-container .bride-content img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.open-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.open-footer #open-content-btn {
+    background-color: var(--ivory);
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Open Content */
+#open-content {
+    background-color: var(--charcoal);
+    width: 100%;
+    height: 100vh;
+}
+
+#open-content.active {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+#open-content::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.4) 2px, transparent 3px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.3) 1.5px, transparent 3px);
+    background-size: 200px 200px;
+    animation: drift 30s linear infinite;
+}
+
+/* Header */
+.open-content-header {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.open-content-header h1 {
+    background-color: var(--ivory);
+    padding: 0.5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Flower */
+.flower {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flower .flower-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.flower .flower-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    padding: 2rem;
+    background-color: var(--warm-grey);
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+}
+
+.container h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Hero */
+.container .hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.container .hero .hero-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Bride */
+.container .bride-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.container .bride-container .bride-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.container .bride-container .bride-content img {
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Date */
+.container .date #location {
+    border: none;
+    background-color: var(--gold-accent);
+    color: var(--ivory);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Gallery */
+.container .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.container .gallery .gallery-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .gallery .gallery-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.container .gallery .gallery-content figcaption {
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+}
+
+/* Gift */
+.container #message-bride {
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.container .gift-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .gift-container .gift-content {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--ivory);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.container .gift-container .gift-content img {
+    width: 30%;
+    height: auto;
+}
+
+/* Footer */
+.footer-promo {
+    background-color: var(--ivory);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+}
+
+.footer-promo .footer-container {
+    padding: 2rem;
+}
+
+.footer-promo .footer-container h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.footer-promo .footer-container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-promo .footer-container a {
+    text-decoration: none;
+    color: var(--pm);
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 1rem 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer-promo .footer-container img {
+    width: 15%;
+    height: auto;
+}
+
+.footer-promo .footer-container .content {
+    margin: 1rem 0;
+}
+
+.footer-promo .footer-container .footer-content .btn-contact {
+    background-color: var(--warm-grey);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.footer-promo .footer-container .footer-content .btn-contact:hover {
+    background-color: var(--ivory);
+}
+
+.footer-promo .footer-container .footer-music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    flex-direction: column;
+}
+
+.footer-promo .footer-container .footer-music #music-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-promo .footer-container .footer-music #music-icon p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-promo .footer-container .footer-music .spinner {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    width: 120%;
+    height: 120%;
+    border: 3px solid #ccc;
+    border-top: 3px solid #b85c38;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade in */
+.fade-in {
+    opacity: 0;
+    transition: opacity .8s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+/* Fade down */
+.fade-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: .8s ease;
+}
+
+.fade-down.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes drift {
+    to {
+      background-position: 0 100vh;
+    }
+}
+
+.petal {
+    position: fixed;
+    top: -10%;
+    width: 10px;
+    height: 10px;
+    background: rgba(245, 200, 210, 0.8);
+    border-radius: 60% 40% 60% 40%;
+    pointer-events: none;
+    animation: fall linear infinite, sway ease-in-out infinite, fade linear infinite;
+}
+
+@keyframes fall {
+    to {
+      transform: translateY(120vh);
+    }
+}
+
+@keyframes sway {
+    0%, 100% { margin-left: 0; }
+    50% { margin-left: 20px; }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    10%, 90% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    html, body {
+        font-size: 70%;
+    }
+    #open-container .bride-container .bride-content img {
+        width: 40%;
+    }
+    .container .hero .hero-content img {
+        width: 100%;
+    }
+    .container .bride-container .bride-content img {
+        width: 100%;
+    }
+    .container .gallery .gallery-content img {
+        width: 100%;
+    }
+}
+
+/* Tablet (601px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    html, body {
+        font-size: 80%;
+    }
+    #open-container .bride-container .bride-content img {
+        width: 40%;
+    }
+    #open-container .bride-container .bride-content img {
+        width: 40%;
+    }
+    .container .hero .hero-content img {
+        width: 100%;
+    }
+    .container .bride-container .bride-content img {
+        width: 100%;
+    }
+    .container .gallery .gallery-content img {
+        width: 100%;
+    }
+}
+
+/* Laptop (901px – 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    html, body {
+        font-size: 100%;
+    }
+}
+
+/* Desktop (≥ 1201px) */
+@media (min-width: 1201px) {
+    html, body {
+        font-size: 100%;
+    }
+}

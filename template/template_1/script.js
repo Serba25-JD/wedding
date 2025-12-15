@@ -8,10 +8,7 @@ async function main() {
     const to = rest.slice(2).join(' & ');
     const usersData = await fetchData();
     const users = usersData.find(u => u.title === user);
-    if(!users) {
-        showError(user);
-        return;
-    } else {
+    if(users) {
         loadFunction(users, to, usersData);
         window.addEventListener('scroll', runTransitions);
     };
@@ -19,7 +16,7 @@ async function main() {
 main();
 
 async function fetchData() {
-    const response = await fetch('assets/js/data.json');
+    const response = await fetch('template/template_1/data.json');
     const data = await response.json();
     return data;
 }
@@ -91,7 +88,7 @@ function changeTitle(users) {
 function loadFunctionLayout(users, usersData) {
     const body = document.getElementById('body-message-container');
     body.removeAttribute('id', 'body-message-container');
-    body.removeAttribute("style");
+    body.removeAttribute('style');
     const header = document.createElement('header');
     const main = document.createElement('main');
     const footer = document.createElement('footer');
@@ -175,6 +172,7 @@ function showHeader(users) {
     image.height = 1024;
     image.loading = 'lazy';
     image.alt = users.title;
+    image.loading = 'lazy';
     // Append
     divImage.appendChild(image);
     divContent.append(divTitle, divImage);
@@ -224,6 +222,7 @@ function showHero(users) {
     image.height = 1536;
     image.loading = 'lazy';
     image.alt = users.title;
+    image.loading = 'lazy';
     const p = document.createElement('p');
     p.textContent = users.text_hero;
     divRight.append(image, p);
@@ -240,17 +239,19 @@ function showMessage(users) {
     const main = document.querySelector('main');
     const section = document.createElement('section');
     section.classList.add('container', 'fade-in');
+    const divContainer = document.createElement('div');
+    divContainer.classList.add('hero-message');
     const h2 = document.createElement('h2');
     h2.textContent = users.text_message[0].title;
-    section.appendChild(h2);
+    divContainer.appendChild(h2);
     users.text_message[1].text.forEach(text => {
         const p = document.createElement('p');
         p.textContent = text;
-        section.appendChild(p);
+        divContainer.appendChild(p);
     });
     const divDivider = document.createElement('div');
     divDivider.classList.add('divider');
-    section.appendChild(divDivider);
+    section.append(divContainer, divDivider);
     main.insertAdjacentElement('beforeend', section);
 };
 
@@ -278,6 +279,7 @@ function showBride(users) {
             imageBoy.height = 720;
             imageBoy.loading = 'lazy';
             imageBoy.alt = boy.title;
+            imageBoy.loading = 'lazy';
             divImageBoy.appendChild(imageBoy);
             const pBoy = document.createElement('p');
             pBoy.textContent = boy.text;
@@ -299,6 +301,7 @@ function showBride(users) {
             imageWomen.height = 720;
             imageWomen.loading = 'lazy';
             imageWomen.alt = women.title;
+            imageWomen.loading = 'lazy';
             divImageWomen.appendChild(imageWomen);
             const pWomen = document.createElement('p');
             pWomen.textContent = women.text;
@@ -315,8 +318,9 @@ function showBride(users) {
 function showDate(users) {
     const main = document.querySelector('main');
     const section = document.createElement('section');
-    section.setAttribute('id', 'date');
     section.classList.add('container', 'fade-in');
+    const divContainer = document.createElement('div');
+    divContainer.classList.add('date-text');
     const h2 = document.createElement('h2');
     h2.textContent = 'Pernikahan yang Indah';
     const pDate = document.createElement('p');
@@ -330,7 +334,8 @@ function showDate(users) {
     button.textContent = 'Lihat Rute';
     const divDivider = document.createElement('div');
     divDivider.classList.add('divider');
-    section.append(h2, pDate, pLocationName, pLocationNameMap, button, divDivider);
+    divContainer.append(h2, pDate, pLocationName, pLocationNameMap, button, divDivider);
+    section.appendChild(divContainer);
     main.insertAdjacentElement('beforeend', section);
     showRute(users);
 };
@@ -375,6 +380,7 @@ function showGallery(users) {
                 image.height = 1024;
                 image.loading = 'lazy';
                 image.alt = users.title;
+                image.loading = 'lazy';
                 divImageWedding.appendChild(image);
                 divContainerImage.appendChild(divImageWedding);
             });
@@ -389,6 +395,7 @@ function showGallery(users) {
                 image.height = 1024;
                 image.loading = 'lazy';
                 image.alt = users.title;
+                image.loading = 'lazy';
                 divImageWedding.appendChild(image);
                 divContainerImage.appendChild(divImageWedding);
             });
@@ -511,7 +518,7 @@ function showFooter() {
     const aInstagram = document.createElement('a');
     aInstagram.href = 'https://www.instagram.com/je.onlyone_';
     const imgInstagram = new Image();
-    imgInstagram.src = '../../assets/css/instagram.svg';
+    imgInstagram.src = 'assets/image/main/instagram.svg';
     imgInstagram.alt = 'Instagram';
     imgInstagram.loading = 'lazy';
     aInstagram.appendChild(imgInstagram);
@@ -538,26 +545,6 @@ function showFooter() {
     pCreator.textContent = 'Made with ❤️: Jeremi. (2025)';
     divContainer.append(divContent, divSocial, divMusic, pCreator);
     footer.appendChild(divContainer);
-};
-
-function showError(users) {
-    const body = document.querySelector('body');
-    body.setAttribute('id', 'not-found');
-    const header = document.createElement('header');
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Ups, ada kesalahan nih...';
-    header.appendChild(h1);
-    const main = document.createElement('main');
-    const section = document.createElement('section');
-    const p = document.createElement('p');
-    p.textContent = `${users} tidak ditemukan.`;
-    section.appendChild(p);
-    main.appendChild(section);
-    const footer = document.createElement('footer');
-    const pFooter = document.createElement('p');
-    pFooter.textContent = 'Made with ❤️: Jeremi. (2025)';
-    footer.appendChild(pFooter);
-    body.append(header, main, footer);
 };
 
 function runTransitions() {

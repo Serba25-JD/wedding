@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --midnight_black: #0F0F14;
+    --cream: #FAF3E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 1.6;
+};
+
+html, body {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    color: var(--midnight_black);
+}
+
+/* Open Container */
+#open-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 4rem;
+}
+
+#open-container::after {
+    content: '';
+    position: fixed;
+    background-image: url('../../assets/image/main/500x500-2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+#open-container .open-header-container h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#open-container .open-main-container .open-section-container figure {
+    background-color: var(--cream);
+    padding: 1rem;
+}
+
+#open-container .open-main-container .open-section-container img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+#open-container .open-main-container .open-section-container figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#open-container .open-footer-container #open-container-btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--cream);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Open Content */
+#open-content {
+    opacity: 0;
+    transition: all .8s ease;
+}
+
+#open-content.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    html, body {
+        font-size: 70%;
+    }
+}
+
+/* Tablet (601px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    html, body {
+        font-size: 80%;
+    }
+}
+
+/* Laptop (901px – 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    html, body {
+        font-size: 100%;
+    }
+}
+
+/* Desktop (≥ 1201px) */
+@media (min-width: 1201px) {
+    html, body {
+        font-size: 100%;
+    }
+}

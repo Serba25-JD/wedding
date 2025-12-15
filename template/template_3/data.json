@@ -1,6 +1,6 @@
 [
     {
-        "template": 1,
+        "template": 3,
         "title": "Rio & Lidia",
         "date": "16 Juli 2025",
         "time": "10.00 WIB",
@@ -10,7 +10,7 @@
         "location_coordinate": "2.121217099754979, 98.45469810792544",
         "image_header": "assets/image/Rio&Lidia/profile.webp",
         "image_hero": "assets/image/Rio&Lidia/profile_2.webp",
-        "background_image": "../../assets/image/Rio&Lidia/profile_5.webp",
+        "background_image": "assets/image/Rio&Lidia/profile_5.webp",
         "biography": [
             {
                 "boy": [
@@ -61,8 +61,8 @@
             {
                 "BCA": [
                     {
-                        "src": "assets/image/BCA.png",
-                        "number": "8430559681",
+                        "src": "assets/image/main/BCA.png",
+                        "number": "123456789",
                         "name": "Riolinto Marpaung"
                     }
                 ]

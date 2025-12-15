@@ -1,53 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     const url = new URLSearchParams(window.location.search);
     const template =  url.get('t');
-    if(template) {
-        async function main() {
-            const query = window.location.search.substring(1);
-            const params = query.split('&');
-            const tParam = params[0];
-            const template = Number(tParam.split('=')[1]);
-            const rest = params.slice(1);
-            const user = rest.slice(0,2).join(' & ');
-            const usersData = await fetchData();
-            const users = usersData.find(u => u.title === user);
-            if(!users) {
-                showLayout();
-                return;
-            };
-            if(users.template === template) {
-                const body = document.querySelector('body');
-                body.innerHTML = '';
-                const style = document.createElement('link');
-                style.rel = 'stylesheet';
-                style.href = `template/template_${template}/styles.css`;
-                document.head.appendChild(style);
-                const script = document.createElement('script');
-                script.src = `template/template_${template}/script.js`;
-                script.defer = true;
-                body.appendChild(script);
-                return;
-            } else {
-                showLayout();
-            };
+    fetch('assets/js/user.json')
+    .then(response => response.json())
+    .then(data => {
+        const query = window.location.search.substring(1);
+        const params = query.split('&');
+        const tParam = params[0];
+        const template = Number(tParam.split('=')[1]);
+        const rest = params.slice(1);
+        const user = rest.slice(0,2).join(' & ');
+        const found = data.find(item => item.user === user && item.template === template);
+        if(found) {
+            const body = document.querySelector('body');
+            body.innerHTML = '';
+            const styleTag = document.querySelector('link[rel="stylesheet"]');
+            styleTag.href = `template/template_${template}/styles.css`;
+            const script = document.createElement('script');
+            script.src = `template/template_${template}/script.js`;
+            script.defer = true;
+            body.appendChild(script);
+        } else {
+            showLayout();
         };
-        async function fetchData() {
-            const response = await fetch('assets/js/data.json');
-            const data = await response.json();
-            return data;
-        };
-        main();
-        return;
-        // fetch(`template/template_${template}/index.html`)
-        // .then(response => response.text())
-        // .then(html => {
-        //     document.getElementById('template-container').innerHTML = html;
-        // })
-        // const newUrl = `template/template_${template}/` + window.location.search.replace('?t=1&', '?');
-        // // window.location.href = newUrl;
-        // history.pushState(null, '', newUrl);
-    };
-    showLayout();
+    });
     function showLayout() {
         fetch('assets/js/template.json')
         .then(response => response.json())
@@ -72,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 divImage.append(divPreview, image);
                 const divContent = document.createElement('div');
                 divContent.classList.add('content', 'selected');
-                divContent.setAttribute('no', no + 1);
+                divContent.setAttribute('no', no);
                 const p = document.createElement('p');
                 p.textContent = 'Pesan';
                 divContent.appendChild(p);

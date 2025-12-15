@@ -1,0 +1,79 @@
+[
+    {
+        "template": 2,
+        "title": "Rio & Lidia",
+        "date": "16 Juli 2025",
+        "time": "10.00 WIB",
+        "location_map": "Desa Tukka Ambobi-Paranginan",
+        "location_name": "Desa Tukka Ambobi, Pakkat, Humbang Hasundutan",
+        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.086034460051!2d98.454709!3d2.120552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302fb5267621f685%3A0x846ad674dcb3917!2sDesa%20Tukka%20Ambobi-Paranginan!5e0!3m2!1sid!2sid!4v1765430976572!5m2!1sid!2sid",
+        "location_coordinate": "2.121217099754979, 98.45469810792544",
+        "image_header": "assets/image/Rio&Lidia/profile.webp",
+        "image_hero": "assets/image/Rio&Lidia/profile_2.webp",
+        "background_image": "assets/image/Rio&Lidia/profile_5.webp",
+        "biography": [
+            {
+                "boy": [
+                    {
+                        "title": "Riolinto Marpaung, SP",
+                        "image": "assets/image/Rio&Lidia/profile_pria.webp",
+                        "text": "Anak Kelima dari Bapak Opung Irfan Marpaung (+) dan Ibu br. Sinaga."
+                    }
+                ],
+                "women": [
+                    {
+                        "title": "Lidia br. Sihotang",
+                        "image": "assets/image/Rio&Lidia/profile_wanita.webp",
+                        "text": "Anak Keempat dari Bapak J. Sihotang dan Ibu A. br. Nainggolan."
+                    }
+                ]
+            }
+        ],
+        "gallery": [
+            { 
+                "wedding" : [
+                    { "src": "assets/image/Rio&Lidia/profile_2.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_3.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_4.webp"}
+                ]
+            },
+            {
+                "fiance": [
+                    { "src": "assets/image/Rio&Lidia/profile_5.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_6.webp"},
+                    { "src": "assets/image/Rio&Lidia/profile_7.webp"}
+                ]
+            }
+        ],
+        "text_hero": "Dua hati, satu perjalanan. Bersama dalam cinta, tertawa dalam kebahagiaan, menapaki hari-hari baru sebagai satu.",
+        "text_message": [ 
+            {
+                "title": "Shalom"
+            },
+            {
+                "text": [ "Tuhan membuat segala sesuatu indah pada waktunya. Indah saat Dia mempertemukan, indah saat Dia menumbuhkan kasih, dan indah saat Dia mempersatukan putra-putri kami dalam suatu ikatan pernikahan Kudus.", "Dengan segala kerendahan hati dan dengan ungkapan syukur atas karunia Tuhan, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri Resepsi Pernikahaan kami." ]
+            }
+        ],
+        "text_quote": "Cinta sejati bukan tentang menemukan seseorang yang sempurna, tapi menemukan seseorang yang membuatmu sempurna dengan caranya sendiri.",
+        "text_gallery": "Kami bertemu seperti alunan takdir, saling melengkapi dalam tawa dan harapan. Kini, kami siap menulis bab baru, bersama selamanya.",
+        "text_closing": "Terima kasih atas doa dan kehadiranmu. Semoga cinta kami memberi inspirasi dan kebahagiaan untuk kita semua.",
+        "bank": [
+            {
+                "BCA": [
+                    {
+                        "src": "assets/image/main/BCA.png",
+                        "number": "123456789",
+                        "name": "Riolinto Marpaung"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "song": [
+            "assets/audio/Glenn Fredly - Kisah Romantis.mp3",
+            "assets/audio/Isyana Sarasvati - Kau Adalah (feat. Rayi Putra).mp3",
+            "assets/audio/Yovie & Nuno - Janji Suci.mp3"
+        ]
+    }
+]
